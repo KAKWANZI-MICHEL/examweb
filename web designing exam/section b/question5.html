@@ -1,0 +1,36 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">  
+    <title>Page Layout</title>  
+</head>  
+<style>
+.grid-layout {  
+    display: grid;  
+    grid-template-columns: 25% 75%;   
+}  
+
+.sidebar {  
+    background-color: #f0f0f0;  
+    padding: 15px;  
+}  
+
+.content {  
+    padding: 15px;  
+}  
+
+@media (max-width: 600px) {  
+    .grid-layout {  
+        grid-template-columns: 1fr; 
+    }  
+}
+</style>
+<body>  
+    <div class="grid-layout">  
+        <aside class="sidebar">Sidebar</aside>  
+        <main class="content">Main Content</main>  
+    </div>  
+</body>  
+</html>
